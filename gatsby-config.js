@@ -51,6 +51,21 @@ module.exports = {
         ],
       },
     },
+	{
+	resolve: `gatsby-plugin-google-tagmanager`,
+	    options: {
+	      id: "GTM-NCTFMC9",
+
+	      // Include GTM in development.
+	      // Defaults to false meaning GTM will only be loaded in production.
+	      includeInDevelopment: false,
+
+	      // Specify optional GTM environment details.
+	      gtmAuth: "ZUK-PDkqyh1uZ53tcpxfVw",
+	      gtmPreview: "env-2",
+	    },
+	},
+	
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
